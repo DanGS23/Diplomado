@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+    <title>Hoteles colombia</title>
+</head>
+
+<body>
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] text-center bg-sky-900 transition-all duration-500 ease-out translate-x-0  z-40">
+        <div class="text-xl relative">
+            <div class="p-2.5 mt-1 flex items-center">
+                <h1 class="font-bold text-gray-200 text-sxl ml-3">Hoteles de colombia</h1>
+                <div class=" absolute right-[-40px] top-[-12px] bg-sky-900 text-gray-50 rounded-r h-10 flex items-center justify-center">
+                    <i class="bi bi-arrow-bar-left p-2 cursor-pointer" id="menu"></i>
+                </div>
+            </div>
+            <div class="my-2 bg-gray-600 h-[1px]"></div>
+        </div>
+        <a href="index.html">
+            <div
+                class="bg-sky-600 p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-600 text-white">
+                <i class="bi bi-list-check"></i>
+                <span class="text-[15px] ml-4 text-gray-200 font-bold">Listado de hoteles</span>
+            </div>
+        </a>
+        <a href="./view/crear.html">
+            <div
+                class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-sky-600 text-white">
+                <i class="bi bi-plus-lg"></i>
+                <span class="text-[15px] ml-4 text-gray-200 font-bold">Crear hotel</span>
+            </div>
+        </a>
+    </div>
+    <div class="transition-all duration-500 ease-out ml-[300px] pt-10" id="container">
+        <h1 class="mb-4 text-3xl text-center font-bold leading-none tracking-tight text-gray-900">Listado general
+            de hoteles</h1>
+        <div class="p-10">
+
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left bg-sky-600 text-gray-800 ">
+                    <thead class="text-xs text-white uppercase ">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                NIT
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Nombre
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Ciudad
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Direccion
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                Habitaciones
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-center">
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                        <tr class="border-b bg-sky-100 hover:bg-sky-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                111111111-1
+                            </th>
+                            <td class="px-6 py-4">
+                                Hotel pradera
+                            </td>
+                            <td class="px-6 py-4">
+                                Barranquilla
+                            </td>
+                            <td class="px-6 py-4">
+                                Cr 28 Calle #5-61
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                300
+                            </td>
+                            <td class="px-6 py-4 flex items-center justify-center">
+                                <a href="./view/detalles.html" type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Detalles</a>
+                            </td>
+                        </tr>                  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./public/js/menu.js"></script>
+</body>
+
+</html>
